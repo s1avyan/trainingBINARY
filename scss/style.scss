@@ -185,6 +185,7 @@ body {
 }
 //portfolio
 .portfolio {
+  width: 100%;
   margin: 0 auto;
   min-width: 550px;
   background-color: #f3f3f3;
@@ -192,7 +193,6 @@ body {
   align-items: center;
   justify-content: center;
   &__content {
-    max-width: 1080px;
   }
   &__header {
     text-transform: uppercase;
@@ -230,6 +230,7 @@ body {
     margin-bottom: 130px;
   }
   &__main {
+    max-width: 1080px;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -278,4 +279,67 @@ body {
     max-width: 111px;
     max-height: 63px;
   }
+}
+.contacts {
+  border: 1px solid black;
+  margin: 4px;
+  &__container {
+    border: 1px solid black;
+    margin: 6px;
+    justify-content: start;
+    width: 100%;
+    height: 820px;
+  }
+
+  &__header {
+    border: 1px solid black;
+    margin: 8px;
+  }
+
+  &__title {
+    margin-top: 180px;
+  }
+
+  &__main {
+  }
+
+  &__col {
+  }
+
+  &__row {
+  }
+
+  &__name {
+  }
+
+  &__inputname {
+  }
+
+  &__email {
+  }
+
+  &__inputemail {
+  }
+
+  &__message {
+  }
+
+  &__inputmessage {
+  }
+}
+.socialLogo {
+}
+
+.footer {
+  background: #3c3c3c;
+  &__container {
+  }
+  &__row {
+  }
+  &__logo {
+    object-fit: scale-down;
+  }
+}
+.socialLogo {
+  object-fit: scale-down;
 }
