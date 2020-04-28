@@ -6,29 +6,33 @@ body {
   margin: 0 auto;
   justify-content: center;
 }
-.header {
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url("../img/header/bg-header.png") 50% / cover no-repeat;
-  text-transform: uppercase;
   color: #fff;
-  justify-content: center;
-  text-align: center;
-  max-width: 100%;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1070px;
   height: 1080px;
+  text-transform: uppercase;
+}
+.header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  background: url("../img/header/bg-header.png") 50% / cover no-repeat;
   &__logo-text {
     display: flex;
     text-align: center;
     justify-content: center;
-    height: 123px;
-    width: 196px;
     & img {
       display: flex;
-      position: absolute;
+      height: 123px;
+      width: 195px;
       left: 50%;
       top: 165px;
-      margin: 0 0 0 -82px;
+      margin: 0;
     }
   }
   &__main-text {
@@ -53,9 +57,8 @@ body {
     position: absolute;
     width: 104px;
     height: 2px;
-    left: 50%;
     background-color: #fff;
-    margin: 26px 0 0 -35px;
+    margin: 26px 0 0 0;
   }
   &__button {
     display: flex;
@@ -68,6 +71,8 @@ body {
     border: 1px solid white;
     width: 182px;
     font-size: 17px;
+    color: #fff;
+    text-decoration: none;
     &::after {
       display: flex;
       content: "";
@@ -246,6 +251,7 @@ body {
     height: 360px;
   }
   &__button {
+    color: blue($color: #000000);
     margin-top: 70px;
     margin-bottom: 70px;
     border: 1px solid black;
@@ -257,6 +263,7 @@ body {
   text-align: center;
   justify-content: space-evenly;
   align-items: center;
+  text-decoration: none;
   padding: 12px;
   width: 182px;
   font-size: 17px;
@@ -338,7 +345,7 @@ body {
     justify-content: space-between;
     max-width: 380px;
     flex-direction: row;
-    &_messege {
+    &-messege {
       margin-top: 10px;
       margin-bottom: 10px;
       flex-direction: row;
@@ -388,7 +395,7 @@ body {
     margin: 10px;
   }
 }
-.socialLogo {
+.social-logo {
   margin: 15px 0;
 }
 input[type="text"] {
