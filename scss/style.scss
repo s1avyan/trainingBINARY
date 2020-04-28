@@ -20,7 +20,6 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
-  width: 100vw;
   background: url("../img/header/bg-header.png") 50% / cover no-repeat;
   &__logo-text {
     display: flex;
@@ -189,7 +188,6 @@ body {
 }
 //portfolio
 .portfolio {
-  width: 100vw;
   min-width: 550px;
   background-color: #f3f3f3;
   text-align: center;
@@ -411,7 +409,6 @@ input[type="textarea"] {
 }
 
 .footer {
-  width: 100vw;
   max-height: 270px;
   background: #3c3c3c;
   &__container {

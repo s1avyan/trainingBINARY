@@ -51,7 +51,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
   background: url("../img/header/bg-header.png") 50%/cover no-repeat;
 }
 
@@ -289,7 +288,6 @@ body {
 }
 
 .portfolio {
-  width: 100vw;
   min-width: 550px;
   background-color: #f3f3f3;
   text-align: center;
@@ -598,7 +596,6 @@ input[type="textarea"] {
 }
 
 .footer {
-  width: 100vw;
   max-height: 270px;
   background: #3c3c3c;
 }
