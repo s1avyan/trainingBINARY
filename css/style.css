@@ -51,7 +51,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 100vw;
   background: url("../img/header/bg-header.png") 50%/cover no-repeat;
 }
 
@@ -122,7 +122,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 293px;
-  margin-left: 39px;
   padding: 12px;
   border: 1px solid white;
   width: 182px;
@@ -131,7 +130,7 @@ body {
   text-decoration: none;
 }
 
-.header__button::after {
+.header__button:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +289,7 @@ body {
 }
 
 .portfolio {
-  max-width: 100%;
+  width: 100vw;
   min-width: 550px;
   background-color: #f3f3f3;
   text-align: center;
@@ -599,7 +598,7 @@ input[type="textarea"] {
 }
 
 .footer {
-  max-width: 100%;
+  width: 100vw;
   max-height: 270px;
   background: #3c3c3c;
 }
