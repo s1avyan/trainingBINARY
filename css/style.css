@@ -321,10 +321,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 30%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  width: 30%;
+  margin: 0 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -343,9 +341,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
   margin-bottom: 130px;
+}
+
+.portfolio__nav-item:hover {
+  color: #ada074;
+  cursor: pointer;
 }
 
 .portfolio__main {
@@ -376,6 +377,7 @@ body {
 .portfolio__button {
   margin-top: 70px;
   margin-bottom: 70px;
+  border: 1px solid black;
 }
 
 .button {
@@ -391,9 +393,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px;
-  border: 1px solid #fff;
   width: 182px;
   font-size: 17px;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 .partners {
@@ -472,26 +481,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  max-width: 730px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 790px;
   min-height: 360px;
 }
 
 .contacts__block {
+  width: 380px;
   height: 382px;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  margin: 0 8px;
 }
 
 .contacts__col {
-  border: 1px solid black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -499,6 +501,9 @@ body {
 }
 
 .contacts__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 380px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -507,7 +512,8 @@ body {
 }
 
 .contacts__row_messege {
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -520,7 +526,7 @@ body {
 }
 
 .contacts__cell {
-  width: 191px;
+  width: 181px;
 }
 
 .contacts__name {
@@ -559,13 +565,15 @@ body {
   margin-top: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  margin: 10px;
+}
+
+.socialLogo {
+  margin: 15px 0;
 }
 
 input[type="text"] {
   height: 35px;
-  border: none;
   border-top: 2px solid #000;
   background-color: #f8f7f7;
 }
@@ -575,7 +583,7 @@ input[type="textarea"] {
   border: none;
   border-top: 2px solid #000;
   height: 120px;
-  min-width: 380px;
+  min-width: 378px;
 }
 
 .footer {
@@ -618,7 +626,6 @@ input[type="textarea"] {
 }
 
 .right {
-  margin-right: -8px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }

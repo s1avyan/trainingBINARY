@@ -215,8 +215,8 @@ body {
   }
   &__nav {
     align-items: center;
-    max-width: 30%;
-    align-self: center;
+    width: 30%;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
@@ -226,8 +226,11 @@ body {
     font-weight: bold;
     font-size: 15px;
     flex-direction: row;
-    align-content: space-around;
     margin-bottom: 130px;
+    &:hover {
+      color: #ada074;
+      cursor: pointer;
+    }
   }
   &__main {
     max-width: 1080px;
@@ -245,6 +248,7 @@ body {
   &__button {
     margin-top: 70px;
     margin-bottom: 70px;
+    border: 1px solid black;
   }
 }
 .button {
@@ -254,9 +258,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 12px;
-  border: 1px solid #fff;
   width: 182px;
   font-size: 17px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 0.3s;
+  }
 }
 .partners {
   text-align: center;
@@ -314,26 +322,25 @@ body {
 
   &__main {
     flex-direction: row;
-    align-self: center;
-    align-items: flex-start;
-    max-width: 730px;
+    justify-content: space-between;
+    width: 790px;
     min-height: 360px;
   }
   &__block {
+    width: 380px;
     height: 382px;
-    justify-content: stretch;
-    margin: 0 8px;
   }
   &__col {
-    border: 1px solid black;
     flex-direction: column;
   }
 
   &__row {
+    justify-content: space-between;
     max-width: 380px;
     flex-direction: row;
     &_messege {
-      margin-top: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       flex-direction: row;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 30px;
@@ -342,7 +349,7 @@ body {
     }
   }
   &__cell {
-    width: 191px;
+    width: 181px;
   }
   &__name {
     text-transform: uppercase;
@@ -378,14 +385,14 @@ body {
     margin-top: 10px;
     font-weight: 700;
     text-transform: uppercase;
-    align-self: flex-end;
+    margin: 10px;
   }
 }
 .socialLogo {
+  margin: 15px 0;
 }
 input[type="text"] {
   height: 35px;
-  border: none;
   border-top: 2px solid #000;
   background-color: #f8f7f7;
 }
@@ -394,7 +401,7 @@ input[type="textarea"] {
   border: none;
   border-top: 2px solid #000;
   height: 120px;
-  min-width: 380px;
+  min-width: 378px;
 }
 
 .footer {
@@ -428,7 +435,6 @@ input[type="textarea"] {
   }
 }
 .right {
-  margin-right: -8px;
   align-self: flex-end;
 }
 .left {
