@@ -1,5 +1,9 @@
 @import "nullstyle.scss";
 @import url("https://fonts.googleapis.com/css?family=Lato:400, 300, 700, 900");
+
+html {
+  max-width: 100%;
+}
 body {
   cursor: default;
   font-family: Lato;
@@ -12,7 +16,7 @@ body {
   justify-self: center;
   align-items: center;
   flex-direction: column;
-  width: 1070px;
+  max-width: 1070px;
   height: 1080px;
   text-transform: uppercase;
 }
@@ -194,7 +198,7 @@ body {
   align-items: center;
   justify-content: center;
   &__content {
-    width: 100%;
+    max-width: 100%;
   }
   &__header {
     text-transform: uppercase;
@@ -327,7 +331,7 @@ body {
   &__main {
     flex-direction: row;
     justify-content: space-between;
-    width: 790px;
+    max-width: 790px;
     min-height: 360px;
   }
   &__block {
@@ -447,3 +451,22 @@ input[type="textarea"] {
 .socialLogo {
   object-fit: scale-down;
 }
+// media 1280.1024.768.600.480.320
+@media (max-width: 1280px) {
+  * {
+    transition: 0.7s;
+  }
+  .wrapper {
+    max-width: 970px;
+  }
+  .header__main-text {
+    font-size: 24px;
+  }
+  .header__-another-text {
+    font-size: 18px;
+  }
+  .fw_regular {
+    font-size: 14px;
+  }
+}
+//  /media
