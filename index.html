@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link
@@ -12,7 +13,7 @@
   </head>
   <body>
     <!--Header-->
-    <div class="header">
+    <div class="header" id="home">
       <div class="wrapper">
         <div class="header__logo-text">
           <img src="./img/header/logo.png" alt="logo" />
@@ -26,15 +27,15 @@
     <!--Header-->
     <!--nav menu-->
     <nav class="main-menu" id="menu">
-      <div class="main-menu__item">Home</div>
-      <div class="main-menu__item">About us</div>
-      <div class="main-menu__item">Portfolio</div>
-      <div class="main-menu__item">Contact</div>
+      <a class="main-menu__item" href="#home">Home</a>
+      <a class="main-menu__item" href="#about">About us</a>
+      <a class="main-menu__item" href="#Portfolio">Portfolio</a>
+      <a class="main-menu__item" href="#Contacts">Contact</a>
     </nav>
     <!--/nav menu-->
 
     <!--About us-->
-    <div class="about">
+    <div class="about" id="about">
       <div class="about__body">
         <div class="about__header">
           <div class="about__title title">ABOUT</div>
@@ -93,7 +94,7 @@
     <!--/about us-->
 
     <!--portfolio-->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <div class="portfolio__content">
         <div class="portfolio__header">Portfolio</div>
         <!--portfolio_nav-->
@@ -232,6 +233,12 @@
       </div>
     </div>
     <!--/footer-->
+    <div id="map" class="map"></div>
   </body>
   <script src="./js/script.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDupZlouBREd7Kdi7lFEIia9M722OufNSE&callback=initMap"
+    async
+    defer
+  ></script>
 </html>
